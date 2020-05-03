@@ -1,4 +1,6 @@
-# WooliesxApp
+# WooliesX "Shopping List" Exercise – Demo App
+
+This is a small app which implements some of the "Shopping List" flows, using the [WooliesX Stencil Components](https://github.com/jonathanconway/wooliesx-components) developed beforehand.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
