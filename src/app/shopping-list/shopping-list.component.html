@@ -1,0 +1,20 @@
+<div class="shopping-list-container">
+  <wx-shopping-list-item
+    *ngFor="let product of shoppingList"
+    [name]="product.name"
+    [imageUrl]="product.imageUrl"
+    [price]="product.price"
+    [productId]="product.productId"
+    (clickDelete)="onClickDelete(product.productId)">
+  </wx-shopping-list-item>
+
+  <wx-shopping-list-item
+    *ngIf="deletedProduct"
+    [name]="deletedProduct.name"
+    [imageUrl]="deletedProduct.imageUrl"
+    [price]="deletedProduct.price"
+    [productId]="deletedProduct.productId"
+    deleted="true"
+    (clickUndoDelete)="onClickUndoDelete()">
+  </wx-shopping-list-item>
+</div>

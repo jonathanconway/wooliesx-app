@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: row;
+  padding: var(--app-spacing-1);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+
+  * {
+    margin-right: var(--app-spacing-1);
+  }
+}
+
+h1 {
+  display: inline;
+  flex: 1;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: var(--app-spacing-2);
+}

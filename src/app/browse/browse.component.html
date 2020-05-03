@@ -1,0 +1,18 @@
+<wx-search-box
+  class="search-box"
+  placeholder="Enter a product to search for"
+  (search)="onSearch($event)">
+</wx-search-box>
+
+<div class="products">
+  <wx-product
+    *ngFor="let product of products"
+    [name]="product.name"
+    [imageUrl]="product.imageUrl"
+    [price]="product.price"
+    [priceNotes]="product.priceNotes"
+    [productId]="product.productId"
+    [savedToList]="savedToListIds.includes(product.productId)"
+    (clickSaveToList)="onClickSaveToList($event)">
+  </wx-product>
+</div>

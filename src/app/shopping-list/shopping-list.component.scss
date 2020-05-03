@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  margin: var(--app-spacing-2) 0;
+
+  h2 {
+    flex: 1;
+    margin: 0;
+  }
+}
+
+.shopping-list-container {
+  display: flex;
+  flex-direction: column;
+  
+  & > * {
+    margin-bottom: var(--app-spacing-1);
+  }
+}
