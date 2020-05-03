@@ -5,7 +5,7 @@ import { BrowseComponent } from './browse/browse.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/shopping-list', pathMatch: 'full' },
+  { path: '', redirectTo: '/browse', pathMatch: 'full' },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'browse', component: BrowseComponent },    
 ];
