@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "surge ./dist/wooliesx-app conwy-wooliesx-app.surge.sh"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,7 @@
     "@angular/router": "~9.1.4",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "wooliesx-components": "0.0.9",
+    "wooliesx-components": "0.0.12",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
